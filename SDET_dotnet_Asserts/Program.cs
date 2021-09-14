@@ -81,9 +81,7 @@ namespace UnoSquare_Maintenance
             Assert.IsTrue(Browser.FindElement(program.Articles_Events).Displayed);
 
             // Write Assert Equal [Digital transformation solutions] vs [Element.text] h2 object
-            Console.WriteLine(Browser.FindElement(program.h2Text).Text);
             Assert.IsTrue(Browser.FindElement(program.h2Text).Text.Contains("DIGITAL TRANSFORMATION"));
-
 
             //Locate the Service Menu and Click the element
             element = Browser.FindElement(program.UnoSquareServicesMenu);
